@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Source Sans Pro';
+  margin: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-group {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input, .option {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 8px;
+  width: 250px;
+}
+
+.form-group input:focus {
+  outline: 0;
+  border-color: #333;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 8px 12px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  border-color: #333;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: 0;
+  border-color: #333;
+}
+
+.option {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.clickable {
+    cursor: pointer;
+}
+.clickable:hover {
+  background-color: #F5FDFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.leftPane {
+  flex: 95%;
+}
+
+.rightPane {
+  flex: 5%;
+  cursor: pointer;
+  padding: 27px 0 0 5px;
+}
+
+.wide {
+  width: 400px;
 }
